@@ -10,9 +10,16 @@ config_version=4
 
 [application]
 
-config/name="Principia Rithmatica"
-run/main_scene="res://Canvas.tscn"
+config/name="Principia-Rithmatica"
 config/icon="res://icon.png"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[mono]
+
+project/assembly_name="Principia-Rithmatica"
 
 [physics]
 
