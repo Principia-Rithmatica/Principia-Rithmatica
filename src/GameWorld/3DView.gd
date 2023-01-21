@@ -19,6 +19,7 @@ func _input(event):
 	if event is InputEventMouseMotion and _dragging:
 		var origin = _camera.project_ray_origin(event.position)
 		var direction = _camera.project_ray_normal(event.position)
+		direction = direction.normalized()
 		var world3dIntersection = origin - (origin.y / direction.y) * direction
 		var world2dIntersection = (Vector2(world3dIntersection.x, world3dIntersection.z) + Vector2(1, 1)) / 2 * _viewport_size
 		_world.input_point(world2dIntersection)
