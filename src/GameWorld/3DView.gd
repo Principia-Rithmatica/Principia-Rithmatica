@@ -2,7 +2,7 @@ extends Spatial
 
 var _dragging = false
 
-onready var _camera = $Camera
+onready var _camera = $MovableCamera3D
 onready var _viewport_size = $GameWorld3D/Viewport.size
 onready var _world = $GameWorld3D/Viewport/GameWorld2D
 
